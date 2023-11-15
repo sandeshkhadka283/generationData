@@ -1,12 +1,16 @@
 // src/App.js
 import React from 'react';
 import CustomNavbar from './components/CustomNavbar';
+import FamilyGeneration from './components/FamilyGeneration';
+import Footer from './components/Footer';
+
 
 const App = () => {
   return (
     <div>
       <CustomNavbar />
-      {/* Add other content or components */}
+      <FamilyGeneration/>
+      <Footer/>
     </div>
   );
 };
