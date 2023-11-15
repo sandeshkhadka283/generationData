@@ -1,29 +1,25 @@
 // src/components/CustomNavbar.js
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import './CustomNavbar.css'; // Import custom CSS file for Navbar styles
 
 const CustomNavbar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Container>
-        {/* Logo on the left */}
-        <Navbar.Brand href="#home"> Family Generation </Navbar.Brand>
+    <nav className="navbar">
+      <div className="navbar__logo">Family Generation</div>
 
-        {/* Center-aligned navigation links */}
-        <Nav className="mx-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#services">Family</Nav.Link>
-        </Nav>
+      <div className="navbar__links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Family</a></li>
+        </ul>
+      </div>
 
-        {/* Login and Sign Up buttons on the right */}
-        <Nav>
-          <Button variant="outline-info" className="mr-2">Login</Button>
-          <Button variant="info">Sign Up</Button>
-        </Nav>
-      </Container>
-    </Navbar>
+      <div className="navbar__buttons">
+        <button className="navbar__login">Login</button>
+        <button className="navbar__signup">Sign Up</button>
+      </div>
+    </nav>
   );
 };
 
