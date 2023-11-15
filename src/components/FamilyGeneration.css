@@ -1,0 +1,49 @@
+/* src/components/FamilyGeneration.css */
+.family-generation {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .family-generation-header {
+    margin-bottom: 30px;
+  }
+  
+  .family-generation-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .family-generation-header p {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .tappable-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .tappable-item {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+  }
+  
+  .tappable-item:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .tappable-item {
+      width: 45%; /* Adjust the width for smaller screens */
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+  
