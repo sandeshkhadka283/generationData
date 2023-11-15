@@ -1,18 +1,16 @@
 // src/App.js
 import React from 'react';
-import Navbar from './components/Navbar';
-import FamilyGeneration from './components/FamilyGeneration';
-import BottomBar from './components/Bottombar';
+import CustomNavbar from './components/CustomNavbar';
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <FamilyGeneration />
+      <CustomNavbar />
       {/* Add other content or components */}
-      <BottomBar />
     </div>
   );
 };
+
+
 
 export default App;
