@@ -1,0 +1,47 @@
+/* FamilyDetails.css - Example styles for FamilyDetails component */
+
+/* FamilyDetails.css - Example styles for FamilyDetails component */
+
+/* ... (other styles) */
+
+.rope {
+    position: absolute;
+  }
+  
+  .family-details-container {
+    position: relative;
+  }
+  
+  .node {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+
+.family-details-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .node {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .node-header {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .connection {
+    border-left: 2px solid #ccc;
+    height: 50px;
+    margin: 0 10px;
+  }
+  

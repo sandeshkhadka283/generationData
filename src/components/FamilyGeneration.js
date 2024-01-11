@@ -1,8 +1,12 @@
 // src/components/FamilyGeneration.js
+
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './FamilyGeneration.css'; // Import custom CSS file for styling
 
 const FamilyGeneration = () => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
   const generations = [
     { id: 1, label: 'Generation 1' },
     { id: 2, label: 'Generation 2' },
@@ -14,6 +18,8 @@ const FamilyGeneration = () => {
   const handleItemClick = (generation) => {
     // Handle the click/tap event for the selected generation
     console.log(`Selected Generation: ${generation.label}`);
+    // Navigate to the '/family-details' route
+    navigate('/family-details');
   };
 
   return (
